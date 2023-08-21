@@ -1,0 +1,141 @@
+* { /* selector universal */
+    padding: 0; /* espacio entre el contenido de un elemento y el borde iniciado en 0 */
+    margin: 0; /* margen iniciado en 0*/
+}
+
+.header { /* encabezado de la pagina */
+    background-color: #FFFFFF; /* Código hexadecimal para un color blanco */
+}
+
+.container-header { /* contenedor principal de header */
+    display: flex; /*  habilita el uso de flexbox. Flexbox es un sistema de diseño en CSS que facilita la creación de diseños flexibles y responsivos */
+    justify-content: space-between; /* distribuyen los elementos a lo largo del eje principal del contenedor al comienzo y al final */
+    align-items: center; /*  define cómo se alinean los elementos a lo largo del eje secundario del contenedor, de forma vertical en el centro */
+    padding: 20px; /* espaciado en pixeles */
+    margin: 5px; /* margen de pixeles */
+}
+
+.account, .icons { /* selectores multiples, de contenedores internos */
+    display: flex; /* flexblox, diseño en linea */
+}
+
+a { /* selector universal de todos los enlaces de la pagina */
+    text-decoration: none !important; /* sin decoracion de subrayado */
+    margin: 10px; /* margen 10 pixeles */
+    color: black; /* color de enlaces negro */
+}
+
+.container-header .icons .social-media ul { /* ruta hacia la lista desord en clase social-media */
+    list-style: none; /* quitar viñeta de la lista */
+    display: flex; /* flexbox horizontal */
+}
+
+.main { /* clase del cuerpo */
+    height: 100%; /* altura del cuerpo en porcentaje o 750 px para comenzar  */
+    background-color: #00C2CB; /* Código hexadecimal para un color aqua */
+}
+
+.container-main { /* contenedor principal del cuerpo */
+    font-size: 2rem; /* tamaño de la fuente en medida rem */
+}
+
+.container-main .main-image { /* ruta hacia el contenedor de la imagen */
+    text-align: center; /* Centra horizontalmente el contenido */
+}
+
+.container-main .main-image img { /* ruta hacia la imagen en main */
+    width: 300px; /* ancho de la imagen en pixeles */
+    height: 300px; /* altura de la imagen en pixeles */
+}
+
+.container-main hr { /* ruta linea horizontal */
+    margin: 40px 0; /* Margen vertical en pixeles arriba y abajo */
+}
+
+.container-main .main-cards { /* ruta hacia el contenedor de las tarjetas */
+    display: flex; /*  habilita el uso de flexbox. Flexbox es un sistema de diseño en CSS que facilita la creación de diseños flexibles y responsivos */
+    align-items: center; /*  define cómo se alinean los elementos a lo largo del eje secundario del contenedor, de forma vertical en el centro */
+    justify-content: center; /* justificar contenido en el centro */
+}
+
+.container-main .main-cards .card { /* ruta hacia las tarjetas */
+    border: 1px solid #ccc; /* borde en pixel tipo solido color blanco */
+    padding: 10px; /* espaciado en pixeles */
+    margin: 20px; /* margen en pixeles */
+    text-align: center; /* texto alineado en el centro */
+    background-color: white; /* color de fondo blanco */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* sombra alrededor en pixeles color negro y con opacidad */
+    transition: transform 0.3s, box-shadow 0.3s; /* transición suave a transform y box shadow */
+    margin-bottom: 80px; /* margen inferior a las tarjetas en pixeles */
+    display: flex; /* flexbox para el diseño */
+    flex-direction: column; /* alinea los elementos verticalmente */
+    justify-content: space-between; /* ajusta el espacio entre los elementos */
+    height: 100%; /* asegura que la tarjeta ocupe todo el alto disponible */
+}
+
+.container-main .main-cards .card:hover { /* ruta hacia la tarjeta y el hover para realizar un efecto al colocar el cursor */
+    transform: translateY(-10px); /* transformacion de traslacion en eje vertical en pixeles */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* sombra alrededor en pixeles color negro y con opacidad */
+}
+
+.container-main .main-cards .card img { /* ruta hacia la imagen de la tarjeta */
+    max-width: 100%; /* ancho maximo establecido para la imagen en porcentaje */
+    max-height: 300px; /* altura máxima para la imagen en pixeles */
+}
+
+.container-main .main-cards .card p { /* ruta hacia el parrafo de la tarjeta */
+    margin-top: auto; /* margen superior en automatico */
+    font-size: 14px; /* tamaño de fuente en pixeles */
+}
+
+.footer { /* pie de pagina */
+    color: white; /* color de texto blanco */
+    background-color: #000000; /* Código hexadecimal para un color aqua */
+}
+
+.footer a { /* ruta a enlaces */
+    color: white; /* color de enlaces blanco */
+}
+
+.container-footer { /* contenedor principal de header */
+    height: 300px; /* altura del pie en pixeles */
+    display: flex; /*  habilita el uso de flexbox. Flexbox es un sistema de diseño en CSS que facilita la creación de diseños flexibles y responsivos */
+    justify-content: center; /* distribuyen los elementos verticalmente desde inicio y fin */
+    align-items: center; /*  define cómo se alinean los elementos a lo largo del eje secundario del contenedor, de forma vertical en el centro */
+}
+
+.container-footer .social-media, .contact, .form { /* ruta hacia los contenedores secundarios del pie */
+    /* background-color: lightblue; */
+    padding: 50px;  /* espaciado en pixeles */
+    margin: 0 50px; /* margen en pixeles*/
+}
+
+.container-footer h3 { /* ruta hacia titulo en pie */
+    font-size: 2rem; /* tamaño de la fuente en rem */
+    line-height: 5rem; /* ancho de linea en rem */
+}
+
+.container-footer ul { /* ruta hacia la lista desord en clase social-media */
+    list-style: none; /* quitar viñeta de la lista */
+    display: flex; /* flexbox horizontal */
+}
+
+.container-derechos { /* contenedor derechos de autor */
+    text-align: center; /* texto alineado en el centro */
+    justify-content: center; /* justificacion en el centro */
+}
+
+.container-footer .form { /* ruta hacia el formulario en el pie */
+    padding: 10px; /* espaciodo entre contenido */
+    border-radius: 5px; /* radio de bordes */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* sombra alrededor del elemento */
+    margin-top: 50px; /* margen superior en pixeles */
+}
+
+.container-footer .form .form-group { /* ruta hacia los contenedores de correo y contraseña en formulario */
+    margin-bottom: 20px; /* margen inferior en pixeles */
+}
+
+.container-footer .form .btn-primary { /* ruta hacia el boton enviar en el formulario */
+    width: 50%; /* ancho del boton */
+}

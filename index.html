@@ -1,0 +1,97 @@
+<!DOCTYPE html> <!-- estructura html5 para interpretar el resto del documento -->
+<html lang="es"> <!-- definir el idioma en español -->
+<head> <!-- aqui se ingresa la informacion para el navegador -->
+    <meta charset="UTF-8"> <!-- especifica la codificacion de los caracteres del documento, simbolos y caracteres latinos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- aqui se configura cómo la web se muestra en distintos dispositivos. La ventana que muestra el contenido debe tener el ancho del dispositivo donde se visualiza y sin zoom o en tamaño original -->
+    <link rel="stylesheet" href="style.css"> <!-- linkear css de forma externa para dar estilos -->
+    <link rel="icon" type="image/png" href="/img/icono.ico"> <!-- favicon es una imagen pequeña asociada al sitio web que se muestra en la pestaña. Definimos imagen en la carpeta img -->
+    <link href="fontawesome/fontawesome-free-6.4.2-web/css/all.css" rel="stylesheet"> <!-- fuente de iconos FontAwesome descargada-->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> --> <!-- agrega Bootstrap, que es un framework o marco para armar el diseño del sitio web -->
+    <title>Nutricionista Julian Silva</title> <!-- titulo de la pestaña -->
+</head>
+<body> <!-- aqui se ingresa el contenido para el usuario -->
+    <header class="header"> <!-- encabezado de la web -->
+        <div class="container-header"> <!-- contenedor principal encabezado-->
+            <div class="account"> <!-- div1 de cuenta -->
+                <a href="#">Crear cuenta</a> <!-- enlace -->
+                <hr> <!-- linea separadora -->
+                <a href="#">Iniciar sesion</a> <!-- enlace -->
+            </div>
+            <div class="icons"> <!-- div2 iconos -->
+                <div class="search"> <!-- contenedor de busqueda -->
+                    <a href="#">Busqueda</a> <!-- enlace -->
+                </div>
+                <hr>
+                <div class="social-media"> <!-- contenedor de redes sociales -->
+                    <ul> <!-- lista desordenada -->
+                        <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li> <!-- lista con enlace a twitter -->
+                        <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li> <!-- lista con enlace a instagram -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </header>
+
+    <main class="main"> <!-- cuerpo de la pagina -->
+        <div class="container-main"> <!-- contenedor principal del main -->
+            <div class="main-image"> <!-- contenedor1 para la imagen -->
+                <img src="img/4-logo-negro.svg" alt="Logo Julian Silva"> <!-- imagen logo de autor -->
+            </div>
+            <hr> <!-- linea horizontal1 -->
+            <hr> <!-- linea horizontal2 -->
+            <div class="main-cards">
+                <div class="card">
+                    <img src="img/books/nutricion-de-mente.webp" alt="Imagen 1">
+                    <p>NUTRICION (DE) MENTE <br> Autor: Sivori, Diego. Editorial: Grijalbo <br>AR$9.199,00  U$S25,17
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="img/books/nutricion-clinica-y-dietoterapia.webp" alt="Imagen 1">
+                    <p>Nutricion Clinica y Dietoterapia <br> Autor: Rodota y Castro Ed: Med Panam <br> AR$50.337 </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer"> <!-- pie de pagina -->
+        <hr> <!-- liena horizontal -->
+        <div class="container-footer"> <!-- contenedor principal del pie de pagina -->
+            <div class="social-media"> <!-- contenedor1 redes -->
+                <h3>Redes Sociales</h3> <!-- titulo -->
+                <ul> <!-- lista desordenada -->
+                    <li><a href="https://twitter.com/" target="_blank"><i class="fa-solid fa-x" style="color: #ffffff;"></i></a></li> <!-- lista con enlace a twitter -->
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a></li> <!-- lista con enlace a instagram -->
+                </ul>
+            </div>
+            <div class="contact"> <!-- contenedor2 contacto -->
+                <h3>Contacto</h3> <!-- titulo -->
+                <ul> <!-- lista desordenada -->
+                    <li><a href="#"><i class="fa-regular fa-envelope" style="color: #ffffff;"></i></a></li> <!-- lista con enlace a logo del mail -->
+                    <li>nutricionista.juliansilva@gmail.com</li> <!-- lista con direccion de correo electronico -->
+                </ul>
+            </div>
+            <div class="contact"> <!-- contenedor3 formulario -->
+                <h3>Registro</h3> <!-- titulo -->
+                <form>
+                    <div class="form-group"> <!-- contenedor correo -->
+                        <label for="email">Correo Electrónico:</label> <!-- etiqueta correo -->
+                        <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico"> <!-- ingresar texto de correo -->
+                    </div>
+                    <div class="form-group"> <!-- contenedor contraseña -->
+                        <label for="password">Contraseña:</label> <!-- etiqueta contraseña -->
+                        <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña"> <!-- ingresar texto de contraseña -->
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button> <!-- boton enviar -->
+                </form>
+            </div>
+        </div>
+        <hr> <!-- liena horizontal -->
+        <div class="container-derechos"> <!-- contenedor derechos de autor -->
+            <p>&copy; 2021 Nutricionista Julian Silva. Todos los derechos reservados</p> <!-- copyright -->
+        </div>
+    </footer>
+    <!-- agregar bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
