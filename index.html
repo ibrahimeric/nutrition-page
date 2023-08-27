@@ -13,9 +13,13 @@
     <header class="header"> <!-- encabezado de la web -->
         <div class="container-header"> <!-- contenedor principal encabezado-->
             <div class="account"> <!-- div1 de cuenta -->
-                <a href="#">Crear cuenta</a> <!-- enlace -->
+                <div class="register">
+                    <a href="#">Crear cuenta</a> <!-- enlace -->
+                </div>
                 <hr> <!-- linea separadora -->
-                <a href="#">Iniciar sesion</a> <!-- enlace -->
+                <div class="login">
+                    <a href="#">Iniciar sesion</a> <!-- enlace -->
+                </div>
             </div>
             <div class="icons"> <!-- div2 iconos -->
                 <div class="search"> <!-- contenedor de busqueda -->
@@ -68,30 +72,37 @@
                 <h3>Contacto</h3> <!-- titulo -->
                 <ul> <!-- lista desordenada -->
                     <li><a href="#"><i class="fa-regular fa-envelope" style="color: #ffffff;"></i></a></li> <!-- lista con enlace a logo del mail -->
-                    <li>nutricionista.juliansilva@gmail.com</li> <!-- lista con direccion de correo electronico -->
+                    <li>juliansilva@gmail.com</li> <!-- lista con direccion de correo electronico -->
                 </ul>
             </div>
             <div class="contact"> <!-- contenedor3 formulario -->
                 <h3>Registro</h3> <!-- titulo -->
-                <form>
+                <form action="" method="POST" id="form">
                     <div class="form-group"> <!-- contenedor correo -->
                         <label for="email">Correo Electrónico:</label> <!-- etiqueta correo -->
-                        <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico"> <!-- ingresar texto de correo -->
+                        <br>
+                        <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico" required> <!-- ingresar texto de correo -->
                     </div>
                     <div class="form-group"> <!-- contenedor contraseña -->
                         <label for="password">Contraseña:</label> <!-- etiqueta contraseña -->
-                        <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña"> <!-- ingresar texto de contraseña -->
+                        <br>
+                        <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña" required pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{6,12}$" title="Al menos 6 caracteres, debe contener una letra mayúscula, una letra minúscula, un número y no puede contener caracteres especiales"> <!-- ingresar texto de contraseña -->
+                        <!-- <span>Este campo no es valido</span> -->
                     </div>
+                    <br>
                     <button type="submit" class="btn btn-primary">Enviar</button> <!-- boton enviar -->
+                    <p class="warning" id="warnings"></p>
                 </form>
             </div>
         </div>
         <hr> <!-- liena horizontal -->
         <div class="container-derechos"> <!-- contenedor derechos de autor -->
-            <p>&copy; 2021 Nutricionista Julian Silva. Todos los derechos reservados</p> <!-- copyright -->
+            <p>&copy; 2023 Nutricionista Julian Silva. Todos los derechos reservados</p> <!-- copyright -->
         </div>
     </footer>
     <!-- agregar bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <!-- agregar funcionaliidad js -->
+    <script src="./js/index.js"></script>
 </body>
 </html>

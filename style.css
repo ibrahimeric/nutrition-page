@@ -101,13 +101,24 @@ a { /* selector universal de todos los enlaces de la pagina */
     height: 300px; /* altura del pie en pixeles */
     display: flex; /*  habilita el uso de flexbox. Flexbox es un sistema de diseño en CSS que facilita la creación de diseños flexibles y responsivos */
     justify-content: center; /* distribuyen los elementos verticalmente desde inicio y fin */
-    align-items: center; /*  define cómo se alinean los elementos a lo largo del eje secundario del contenedor, de forma vertical en el centro */
+    align-items: flex-start; /*  define cómo se alinean los elementos a lo largo del eje secundario del contenedor, de forma vertical hacia la izquierda */
 }
 
 .container-footer .social-media, .contact, .form { /* ruta hacia los contenedores secundarios del pie */
     /* background-color: lightblue; */
-    padding: 50px;  /* espaciado en pixeles */
-    margin: 0 50px; /* margen en pixeles*/
+    padding: 20px;  /* espaciado en pixeles */
+    height: 200px; /* alto */
+    width: 300px; /* ancho */
+    margin: 30px 0 0 100px; /* margen superior y derecho */
+    text-align: left; /* texto alineado a la izquierda */
+}
+
+.container-footer .social-media .contact .form #warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: #B06AB3;
+    padding-top: 20px;
 }
 
 .container-footer h3 { /* ruta hacia titulo en pie */
