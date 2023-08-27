@@ -97,14 +97,14 @@ a { /* selector universal de todos los enlaces de la pagina */
     color: white; /* color de enlaces blanco */
 }
 
-.container-footer { /* contenedor principal de header */
+.footer .container-footer { /* contenedor principal de header */
     height: 300px; /* altura del pie en pixeles */
     display: flex; /*  habilita el uso de flexbox. Flexbox es un sistema de diseño en CSS que facilita la creación de diseños flexibles y responsivos */
     justify-content: center; /* distribuyen los elementos verticalmente desde inicio y fin */
     align-items: flex-start; /*  define cómo se alinean los elementos a lo largo del eje secundario del contenedor, de forma vertical hacia la izquierda */
 }
 
-.container-footer .social-media, .contact, .form { /* ruta hacia los contenedores secundarios del pie */
+.footer .container-footer .social-media, .contact { /* ruta hacia los contenedores secundarios del pie */
     /* background-color: lightblue; */
     padding: 20px;  /* espaciado en pixeles */
     height: 200px; /* alto */
@@ -113,7 +113,30 @@ a { /* selector universal de todos los enlaces de la pagina */
     text-align: left; /* texto alineado a la izquierda */
 }
 
-.container-footer .social-media .contact .form #warnings{
+.footer .container-footer h3 { /* ruta hacia titulo en pie */
+    font-size: 2rem; /* tamaño de la fuente en rem */
+    line-height: 5rem; /* ancho de linea en rem */
+}
+
+.footer .container-footer ul { /* ruta hacia la lista desord en clase social-media */
+    list-style: none; /* quitar viñeta de la lista */
+    display: flex; /* flexbox horizontal */
+}
+
+.footer .container-footer .contact .form { /* ruta hacia el formulario en el pie */
+    border-radius: 5px; /* radio de bordes */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* sombra alrededor del elemento */
+}
+
+.footer .container-footer .contact .form .form-group { /* ruta hacia los contenedores de correo y contraseña en formulario */
+    margin-bottom: 5px; /* margen inferior en pixeles */
+}
+
+.footer .container-footer .contact .form .btn-primary { /* ruta hacia el boton enviar en el formulario */
+    width: 50%; /* ancho del boton */
+}
+
+.footer .container-footer .social-media .contact .form #warnings{
     width: 200px;
     text-align: center;
     margin: auto;
@@ -121,32 +144,7 @@ a { /* selector universal de todos los enlaces de la pagina */
     padding-top: 20px;
 }
 
-.container-footer h3 { /* ruta hacia titulo en pie */
-    font-size: 2rem; /* tamaño de la fuente en rem */
-    line-height: 5rem; /* ancho de linea en rem */
-}
-
-.container-footer ul { /* ruta hacia la lista desord en clase social-media */
-    list-style: none; /* quitar viñeta de la lista */
-    display: flex; /* flexbox horizontal */
-}
-
-.container-derechos { /* contenedor derechos de autor */
+.footer .container-derechos { /* contenedor derechos de autor */
     text-align: center; /* texto alineado en el centro */
     justify-content: center; /* justificacion en el centro */
-}
-
-.container-footer .form { /* ruta hacia el formulario en el pie */
-    padding: 10px; /* espaciodo entre contenido */
-    border-radius: 5px; /* radio de bordes */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* sombra alrededor del elemento */
-    margin-top: 50px; /* margen superior en pixeles */
-}
-
-.container-footer .form .form-group { /* ruta hacia los contenedores de correo y contraseña en formulario */
-    margin-bottom: 20px; /* margen inferior en pixeles */
-}
-
-.container-footer .form .btn-primary { /* ruta hacia el boton enviar en el formulario */
-    width: 50%; /* ancho del boton */
 }
