@@ -10,3 +10,4 @@
 # 3. boton de registro y validacion de email y contraseña en el footer
 # 4. iconos dinamicos con enlaces a redes sociales
 # 5. transiciones y efectos dinamicos
+# 6. Deploy en Netlify en la siguiente direccion: https://64ec2341ee3f7a5056b6fecb--majestic-haupia-596166.netlify.app/#
