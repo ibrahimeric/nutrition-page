@@ -7,7 +7,7 @@
     background-color: #FFFFFF; /* Código hexadecimal para un color blanco */
 }
 
-.container-header { /* contenedor principal de header */
+.header .container-header { /* contenedor principal de header */
     display: flex; /*  habilita el uso de flexbox. Flexbox es un sistema de diseño en CSS que facilita la creación de diseños flexibles y responsivos */
     justify-content: space-between; /* distribuyen los elementos a lo largo del eje principal del contenedor al comienzo y al final */
     align-items: center; /*  define cómo se alinean los elementos a lo largo del eje secundario del contenedor, de forma vertical en el centro */
@@ -15,7 +15,7 @@
     margin: 5px; /* margen de pixeles */
 }
 
-.account, .icons { /* selectores multiples, de contenedores internos */
+.header .container-header .account, .icons { /* selectores multiples, de contenedores internos */
     display: flex; /* flexblox, diseño en linea */
 }
 
@@ -98,7 +98,7 @@ a { /* selector universal de todos los enlaces de la pagina */
 }
 
 .footer .container-footer { /* contenedor principal de header */
-    height: 300px; /* altura del pie en pixeles */
+    height: 350px; /* altura del pie en pixeles */
     display: flex; /*  habilita el uso de flexbox. Flexbox es un sistema de diseño en CSS que facilita la creación de diseños flexibles y responsivos */
     justify-content: center; /* distribuyen los elementos verticalmente desde inicio y fin */
     align-items: flex-start; /*  define cómo se alinean los elementos a lo largo del eje secundario del contenedor, de forma vertical hacia la izquierda */
@@ -133,18 +133,138 @@ a { /* selector universal de todos los enlaces de la pagina */
 }
 
 .footer .container-footer .contact .form .btn-primary { /* ruta hacia el boton enviar en el formulario */
-    width: 50%; /* ancho del boton */
+    width: 30%; /* ancho del boton */
 }
 
-.footer .container-footer .social-media .contact .form #warnings{
-    width: 200px;
-    text-align: center;
-    margin: auto;
-    color: #B06AB3;
-    padding-top: 20px;
+.footer .container-footer .social-media .contact .form #warnings{ /* ruta de los mensajes de advertencia */
+    width: 200px; /* ancho */
+    text-align: center; /* alineacion central */
+    margin: auto; /* margen automatico */
+    color: #B06AB3; /* color en rgb */
+    padding-top: 20px; /* relleno superior */
 }
 
 .footer .container-derechos { /* contenedor derechos de autor */
     text-align: center; /* texto alineado en el centro */
     justify-content: center; /* justificacion en el centro */
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.961);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlay .active {
+    visibility: visible;
+}
+
+.popup {
+    width: 30%;
+    height: 60%;
+    font-size: 18px;
+    text-align: left;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    position: fixed;
+    min-height: 250px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.popup .btn-cerrar-popup {
+    font-size: 16px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: #BBBBBB;
+    transition: .3s ease all;
+}
+
+.popup .btn-cerrar-popup:hover {
+    color: #000000;
+}
+
+.popup .encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+}
+
+.popup .encabezado .title {
+    font-size: 33px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.popup .formulario {
+    font-size: 14px;
+    line-height: 3.0;
+}
+
+.popup .formulario .form {
+    margin: 15px;
+    padding: 15px;
+}
+
+.popup .formulario .form .input {
+    margin-top: -10px;
+    width: 98%;
+    height: 40px;
+    font-size: 18px;
+    border: 0.5px solid #b9b7b7;
+    text-align: center;
+    line-height: 52px;
+}
+
+.popup .formulario .form .form-name, .form-password {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: -110px;
+}
+
+.popup .formulario .form .form-name .nombre, .apellido, .contraseña, .repetir-contraseña {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+.popup .formulario .form .form-contact .correo, .telefono {
+    display: flex;
+    flex-direction: column;
+}
+
+.popup .formulario .btn-enviar {
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+}
+
+.popup .formulario .btn-primary {
+    width: 40%;
+    height: 40px;
+    background-color: #8CE7FA;
+    border: none;
+    position: absolute;
+    left: 55%;
+    color: black;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.popup .formulario .btn-primary:hover {
+    background: #d0a4e3;
 }
